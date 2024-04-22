@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body
+    class="roboto-regular min-h-screen bg-gradient-to-r from-cyan-100 to-blue-300"
+  >
+    <nav id="nav" class="p-3 flex items-center relative gap-3 lg:gap-4">
+      <div class="flex items-center gap-2">
+        <svg
+          width="60px"
+          height="60px"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="#000000"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <title>file_type_tailwind</title>
+            <path
+              d="M9,13.7q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q11.1,10.9,9,13.7ZM2,22.1q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q4.1,19.3,2,22.1Z"
+              style="fill: #44a8b3"
+            ></path>
+          </g>
+        </svg>
+
+        <div class="text-2xl hidden lg:flex">Tailwind CSS</div>
+      </div>
+      <div class="flex items-center gap-2 px-2 h-9 bg-white rounded-lg flex-1">
+        <input
+          class="outline-none w-full"
+          type="text"
+          placeholder="Search..."
+        />
+      </div>
+      <div class="hidden lg:flex items-center space-x-3">
+        <div class="cursor-pointer">Info</div>
+        <div class="cursor-pointer">Products</div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-8 h-8 cursor-pointer"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+          />
+        </svg>
+      </div>
+      <div>
+        <svg
+          id="menu"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-8 h-8 cursor-pointer lg:hidden"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+      </div>
+      <div
+        id="menu-list"
+        class="absolute top-[60px] left-0 lg:hidden bg-white space-y-1 w-full p-3 h-screen z-50"
+      >
+        <div class="cursor-pointer tracking-wide p-2">Info</div>
+        <div class="cursor-pointer tracking-wide p-2">Products</div>
+      </div>
+    </nav>
+    <div>
+      <h1
+        class="text-center text-xl lg:text-3xl my-5 lg:my-12 font-medium tracking-wide"
+      >
+        Explore the Nature!
+      </h1>
+    </div>
+    <div class="p-3 flex items-center justify-center gap-1 lg:gap-2 shadow-xl">
+      <div
+        class="relative w-1/4 cursor-pointer hover:-translate-y-2 transition:translate"
+      >
+        <img
+          class="rounded-lg"
+          src="./assets/images/vertical-shot-thick-forest-river.jpg"
+          alt=""
+        />
+        <div
+          class="absolute bottom-3 left-3 text-white tracking-wide text-sm lg:text-xl font-semibold"
+        >
+          Pricing
+        </div>
+      </div>
+      <div
+        class="relative w-1/4 cursor-pointer hover:-translate-y-2 transition:translate"
+      >
+        <img
+          class="rounded-lg"
+          src="./assets/images/vertical-shot-narrow-pathway-forest-with-lot-tall-green-trees.jpg"
+          alt=""
+        />
+        <div
+          class="absolute bottom-3 left-3 text-white tracking-wide text-sm lg:text-xl font-semibold"
+        >
+          Pricing
+        </div>
+      </div>
+      <div
+        class="relative w-1/4 cursor-pointer hover:-translate-y-2 transition:translate"
+      >
+        <img
+          class="rounded-lg"
+          src="./assets/images/vertical-shot-river-surrounded-by-mountains-meadows-scotland (1).jpg"
+          alt=""
+        />
+        <div
+          class="absolute bottom-3 left-3 text-white tracking-wide text-sm lg:text-xl font-semibold"
+        >
+          Pricing
+        </div>
+      </div>
+      <div
+        class="relative w-1/4 cursor-pointer hover:-translate-y-2 transition:translate"
+      >
+        <img
+          class="rounded-lg"
+          src="./assets/images/vertical-shot-narrow-pathway-forest-with-lot-tall-green-trees.jpg"
+          alt=""
+        />
+        <div
+          class="absolute bottom-3 left-3 text-white tracking-wide text-sm lg:text-xl font-semibold"
+        >
+          Pricing
+        </div>
+      </div>
+    </div>
+    <div class="p-3 flex items-center gap-2 lg:gap-3 tracking-wide mt-3">
+      <div
+        class="font-semibold text-md lg:text-2xl hover:border-b border-black pb-2 cursor-pointer"
+      >
+        Popular
+      </div>
+      <div
+        class="text-gray-700 text-md lg:text-2xl border-b border-transparent pb-2 cursor-pointer"
+      >
+        New
+      </div>
+    </div>
+    <div
+      class="p-3 flex items-center justify-center gap-1 lg:gap-2 py-3 shadow-xl"
+    >
+      <div class="relative w-1/3 cursor-pointer">
+        <img
+          class="rounded-lg"
+          src="./assets/images/erawan-waterfall-autumn-thailand-beautiful-waterfall-with-emerald-pool-nature.jpg"
+          alt=""
+        />
+        <div
+          class="absolute bottom-3 left-3 text-white tracking-wide font-semibold text-sm lg:text-xl"
+        >
+          Nature
+        </div>
+      </div>
+      <div class="relative w-1/3 cursor-pointer">
+        <img
+          class="rounded-lg"
+          src="./assets/images/erawan-waterfall-autumn-thailand-beautiful-waterfall-with-emerald-pool-nature.jpg"
+          alt=""
+        />
+        <div
+          class="absolute bottom-3 left-3 text-white tracking-wide font-semibold text-sm lg:text-xl"
+        >
+          Nature
+        </div>
+      </div>
+      <div class="relative w-1/3 cursor-pointer">
+        <img
+          class="rounded-lg"
+          src="./assets/images/erawan-waterfall-autumn-thailand-beautiful-waterfall-with-emerald-pool-nature.jpg"
+          alt=""
+        />
+        <div
+          class="absolute bottom-3 left-3 text-white tracking-wide font-semibold text-sm lg:text-xl"
+        >
+          Nature
+        </div>
+      </div>
+    </div>
+    <footer class="p-3 my-5 bg-blue-500 h-16 flex items-center justify-end">
+      <div class="text-white text-lg">
+        Ebru Özdemir © 2024 - All Rights Reserved.
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
